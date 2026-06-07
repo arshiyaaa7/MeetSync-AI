@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: meeting-intelligence-service
+
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+    hikari:
+      data-source-properties:
+        sslmode: require
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8080
+
+groq:
+  api:
+    key: ${GROQ_API_KEY}
+
+jwt:
+  secret: mySuperSecretKey
+
+discord:
+  webhook:
+    url: ${DISCORD_WEBHOOK_URL}
