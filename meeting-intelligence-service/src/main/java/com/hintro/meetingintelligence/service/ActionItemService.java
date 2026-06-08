@@ -48,6 +48,12 @@ public class ActionItemService {
                 request.getAssignee()
         );
 
+        if (request.getStatus() != null) {
+            actionItem.setStatus(
+                    request.getStatus().toUpperCase()
+            );
+        }
+
         if (request.getMeetingId() != null) {
 
             log.info(
@@ -73,28 +79,14 @@ public class ActionItemService {
             actionItem.setMeeting(meeting);
         }
 
-        ActionItem savedActionItem =
-                actionItemRepository.save(
-                        actionItem
-                );
-
-        log.info(
-                "Action item created successfully with id: {}",
-                savedActionItem.getId()
-        );
-
+        ActionItem savedActionItem = actionItemRepository.save(actionItem);
+        log.info("Action item created successfully with id: {}", savedActionItem.getId());
         return savedActionItem;
     }
 
-    public ActionItem updateStatus(
-            UUID id,
-            UpdateActionItemStatusRequest request
-    ) {
+    public ActionItem updateStatus(UUID id, UpdateActionItemStatusRequest request) {
 
-        log.info(
-                "Updating status for action item: {}",
-                id
-        );
+        log.info("Updating status for action item: {}", id);
 
         ActionItem actionItem =
                 actionItemRepository.findById(id)

@@ -20,4 +20,6 @@ public class CreateActionItemRequest {
     private UUID meetingId;
 
     private Instant dueDate;
+
+    private String status;
 }
