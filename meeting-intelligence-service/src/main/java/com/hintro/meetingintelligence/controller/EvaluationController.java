@@ -20,18 +20,24 @@ public class EvaluationController {
         EvaluationResponse response =
                 new EvaluationResponse(
                         "Arshiya Shaikh",
-                        "your-email@gmail.com",
-                        "https://github.com/your-repo",
-                        "https://your-deployment-url.com",
+                        "arshiyashaikh2202@gmail.com",
+                        "https://github.com/arshiyaaa7/MeetSync-AI",
+                        "https://meetsync-ai-production.up.railway.app",
                         "Groq AI API",
                         List.of(
-                                "Authentication",
+                                "JWT Authentication",
                                 "AI Meeting Analysis",
-                                "Citation Grounding",
-                                "Structured JSON Responses",
-                                "Swagger Integration",
+                                "Transcript Citation Grounding",
+                                "Action Item Management",
+                                "Overdue Action Item Detection",
+                                "Scheduled Reminder Job",
+                                "Discord Webhook Integration",
+                                "Reminder History Tracking",
+                                "Swagger/OpenAPI Documentation",
                                 "Unified API Responses",
-                                "Health Monitoring"
+                                "Global Exception Handling",
+                                "Input Validation",
+                                "Trace ID Logging"
                         )
                 );
 
