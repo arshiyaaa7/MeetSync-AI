@@ -1,14 +1,7 @@
 # MeetSync AI - Meeting Intelligence Service
 
-## Live Deployment URL
-
-ADD_RENDER_DEPLOYMENT_URL_HERE
-
-## Swagger/OpenAPI URL
-
-ADD_SWAGGER_URL_HERE
-
----
+- Live Deployment URL: https://meetsync-ai-production.up.railway.app
+- Swagger/OpenAPI URL: https://meetsync-ai-production.up.railway.app/swagger-ui/index.html
 
 # Overview
 
@@ -23,8 +16,6 @@ Built using:
 * Discord Webhooks
 * JWT Authentication
 
----
-
 # Features
 
 ## Authentication
@@ -33,8 +24,6 @@ Built using:
 * Protected APIs
 * Swagger authorization support
 * Login / Register / Logout APIs
-
----
 
 ## Meeting Intelligence
 
@@ -46,8 +35,6 @@ AI-generated:
 * follow-up suggestions
 
 All outputs include transcript citations.
-
----
 
 ## Action Item Management
 
@@ -68,8 +55,6 @@ Supported statuses:
 * IN_PROGRESS
 * COMPLETED
 
----
-
 ## Overdue Detection
 
 An action item becomes overdue when:
@@ -86,8 +71,6 @@ Endpoint:
 GET /api/action-items/overdue
 ```
 
----
-
 ## Reminder Workflow
 
 Implemented using Spring Scheduled Jobs.
@@ -99,8 +82,6 @@ Workflow:
 3. persist reminder history
 
 Runs every 60 seconds.
-
----
 
 ## External Integration
 
@@ -142,66 +123,6 @@ DISCORD_WEBHOOK_URL=
 
 JWT_SECRET=
 ```
-
----
-
-# Local Setup
-
-## Clone Repository
-
-```bash id="h0l1d5"
-git clone <repository-url>
-```
-
-## Run Application
-
-```bash id="gj0yxv"
-./mvnw spring-boot:run
-```
-
-Application runs on:
-
-```text id="p6u8zb"
-http://localhost:8080
-```
-
----
-
-# Deployment Instructions
-
-## Render
-
-Build Command:
-
-```bash id="3x4o4j"
-./mvnw clean package
-```
-
-Start Command:
-
-```bash id="2kkw1m"
-java -jar target/meeting-intelligence-service-0.0.1-SNAPSHOT.jar
-```
-
----
-
-# Swagger
-
-```text id="b7sjlg"
-http://localhost:8080/swagger-ui/index.html
-```
-
----
-
-# Authentication Flow
-
-## Login
-
-```http id="sl6n0d"
-POST /api/auth/login
-```
-
-Returns JWT token.
 
 ---
 
@@ -431,11 +352,4 @@ Implemented:
 
 ---
 
-# Notes
-
-This implementation prioritizes:
-
-* clean architecture
-* maintainable code
-* grounded AI outputs
-* production-minded engineering
+Completed By Arshiya Shaikh
