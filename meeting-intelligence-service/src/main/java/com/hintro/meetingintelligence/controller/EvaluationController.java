@@ -23,7 +23,7 @@ public class EvaluationController {
                         "arshiyashaikh2202@gmail.com",
                         "https://github.com/arshiyaaa7/MeetSync-AI",
                         "https://meetsync-ai-production.up.railway.app",
-                        "Groq AI API",
+                        "Groq AI API & Discord Webhooks Integration",
                         List.of(
                                 "JWT Authentication",
                                 "AI Meeting Analysis",
