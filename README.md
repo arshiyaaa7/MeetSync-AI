@@ -16,6 +16,15 @@ Built using:
 * Discord Webhooks
 * JWT Authentication
 
+---
+
+# Architecture
+
+The backend follows a clean layered architecture using Controller, Service, and Repository layers to maintain separation of concerns and improve maintainability. Controllers handle API requests, Services contain business logic and AI workflows, while Repositories manage database interactions using Spring Data JPA.
+
+<img width="1087" height="536" alt="Screenshot 2026-06-08 121113" src="https://github.com/user-attachments/assets/499dcef4-3f9c-4daa-aa5d-3673564997d6" />
+
+---
 # Features
 
 ## Authentication
@@ -308,24 +317,6 @@ Tested:
 * overdue detection
 * Discord reminder delivery
 * duplicate reminder prevention
-
----
-
-# Changelog
-
-## Version 1.0.0
-
-Implemented:
-
-* JWT authentication
-* Groq AI integration
-* transcript analysis
-* action item management
-* overdue detection
-* Discord reminders
-* logging & trace IDs
-* Swagger documentation
-* validation & exception handling
 
 ---
 
