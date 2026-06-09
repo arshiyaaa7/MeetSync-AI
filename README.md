@@ -92,6 +92,9 @@ Workflow:
 
 Runs every 60 seconds.
 
+<img width="2879" height="1383" alt="image" src="https://github.com/user-attachments/assets/7332e006-8195-4620-85f3-4f98a302d446" />
+
+
 ## External Integration
 
 Integrated with:
@@ -114,24 +117,6 @@ Used actively in reminder notifications.
 | Discord Webhook | Notifications  |
 | Swagger/OpenAPI | API Docs       |
 | Render          | Deployment     |
-
----
-
-# Environment Variables
-
-```env id="jlwm9u"
-DB_URL=
-
-DB_USERNAME=
-
-DB_PASSWORD=
-
-GROQ_API_KEY=
-
-DISCORD_WEBHOOK_URL=
-
-JWT_SECRET=
-```
 
 ---
 
